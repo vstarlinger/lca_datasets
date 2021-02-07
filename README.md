@@ -26,3 +26,15 @@ The data will be loaded into a dictionary with the following structure:
      }
 }
 ```
+### Generating data
+To generate data the module carculator needs to be installed using `pip install carculator`.
+The data is then generated using the lca_model class:
+
+```python        
+car_config = configparser.ConfigParser()
+car_config.read("scripts/carculator_config.ini")   
+lca_model = lca_model(car_config)
+lca_model.generate_data(min_data_set_size)
+```
+
+configuration options are available in the config.ini file.
