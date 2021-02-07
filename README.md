@@ -13,6 +13,7 @@ Data can be loaded using the lca_model class in the lca_model.py file. This load
 ```python
 lca_model = lca_model()
 lca_model.load_data(path_to_data)
+data = lca_model.data_set
 ```
 The data will be loaded into a dictionary with the following structure:
 ```python
